@@ -21,7 +21,7 @@ Nivel 3: Completado.
 ### Servicio que detecta si un humano es mutante:
 
   - Method: Post
-  - endpoint: http://ec2-34-228-78-222.compute-1.amazonaws.com:8089/mutant
+  - endpoint:http://dna-analyzer-lb-0de34cff4891e104.elb.us-east-1.amazonaws.com:8089/mutant
   - Ejemplo request:
 `{
 "dna":[
@@ -40,7 +40,7 @@ Nivel 3: Completado.
 ### Servicio que consulta las estadísticas de las verificaciones de ADN
 
   - Method: GET
-  - endpoint: http://ec2-34-228-78-222.compute-1.amazonaws.com:8089/stats
+  - endpoint: http://dna-analyzer-lb-0de34cff4891e104.elb.us-east-1.amazonaws.com:8089/stats
   - Ejemplo respuesta:
       
     `{
