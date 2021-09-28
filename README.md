@@ -20,10 +20,12 @@ Nivel 3: Completado.
 
 **Para realizar dichas pruebas es necesario importar el archivo _DNA analyzer.postman_collection.json_ en postman, alojado en la ruta src/test/java/com/dna/analyzer**
 
+**Nota:** Debe cambiarse el endpoint por los proporcionados en las siguientes instrucciones de este documento
+
 ### Servicio que detecta si un humano es mutante:
 
   - Method: Post
-  - endpoint:http://dna-analyzer-lb-0de34cff4891e104.elb.us-east-1.amazonaws.com:8089/mutant
+  - endpoint: http://dna-analyzer-lb-0de34cff4891e104.elb.us-east-1.amazonaws.com:8089/mutant
   - Ejemplo request:
 `{
 "dna":[
@@ -35,7 +37,7 @@ Nivel 3: Completado.
 "TCACTG"]
 }`
 
-  - Respuestas: 
+  - Responses: 
     - HTTP 200 OK: En caso de que sea mutante
     - HTTP 403 FORBIDDEN: En caso de que no sea mutante.
 
@@ -43,7 +45,7 @@ Nivel 3: Completado.
 
   - Method: GET
   - endpoint: http://dna-analyzer-lb-0de34cff4891e104.elb.us-east-1.amazonaws.com:8089/stats
-  - Ejemplo respuesta:
+  - Ejemplo Response:
       
     `{
         "countMutantDna": 3.0,
@@ -51,9 +53,6 @@ Nivel 3: Completado.
         "ratio": 0.67
     }`
       
- 
-
-
 ## Repositorio
 
 El proyecto está realizado con maven, deberá ser descargado e instalado para que el mismo maven descargue las librerías que requiere el proyecto.
@@ -64,3 +63,6 @@ El proyecto está realizado con maven, deberá ser descargado e instalado para q
   - Ejecute el siguiente comando: 
     `git clone https://github.com/sergiotbeud/dna-analyzer.git`
     
+    
+### Base de datos
+El archivo que contiene la bdd solicitada se encuentra dentro de la ruta en el mismo repositorio _src/main/resources/dnaanalyzer.sql_
