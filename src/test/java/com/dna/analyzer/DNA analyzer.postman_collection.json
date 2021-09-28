@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"dna\": [\r\n        \"ATGCGA\",\r\n        \"CAGTGC\",\r\n        \"TTATGT\",\r\n        \"AGAAGG\",\r\n        \"CCCCTA\",\r\n        \"TCACTG\"\r\n    ]\r\n}",
+					"raw": "{\r\n    \"dna\": [\r\n        \"AGCGGA\",\r\n        \"CCGTGC\",\r\n        \"TTATGA\",\r\n        \"AGTAGC\",\r\n        \"CCCGTA\",\r\n        \"TCACTA\"\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,12 +20,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8002/mutant",
+					"raw": "http://ec2-34-228-78-222.compute-1.amazonaws.com:8089/mutant",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"ec2-34-228-78-222",
+						"compute-1",
+						"amazonaws",
+						"com"
 					],
-					"port": "8002",
+					"port": "8089",
 					"path": [
 						"mutant"
 					]
@@ -39,7 +42,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://ec2-34-228-78-222.compute-1.amazonaws.com:8089/stats",
+					"protocol": "http",
+					"host": [
+						"ec2-34-228-78-222",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8089",
+					"path": [
+						"stats"
+					]
 				}
 			},
 			"response": []
