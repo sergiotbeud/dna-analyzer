@@ -18,6 +18,8 @@ Nivel 3: Completado.
 
 ## Instrucciones de pruebas.
 
+**Para realizar dichas pruebas es necesario importar el archivo _DNA analyzer.postman_collection.json_ en postman, alojado en la ruta src/test/java/com/dna/analyzer**
+
 ### Servicio que detecta si un humano es mutante:
 
   - Method: Post
@@ -49,7 +51,7 @@ Nivel 3: Completado.
         "ratio": 0.67
     }`
       
-- Nota: Para realizar dichas pruebas es necesario importar el archivo _DNA analyzer.postman_collection.json_ alojado en la ruta src/test/java/com/dna/analyzer
+ 
 
 
 ## Repositorio
